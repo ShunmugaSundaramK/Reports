@@ -1,0 +1,156 @@
+.sideNavBar{
+    position: absolute;
+    background-color: #222b3c;
+    color: white;
+    z-index: 999;
+
+    .menubarbox{
+        display: none;
+    } 
+
+    h3{
+        margin-left: 20px;
+    }
+
+    .container{
+        .name{
+            list-style: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+        .active{
+            border-left : 4px solid white;
+            padding-left: 10px;
+            border-radius: 4px;
+            // box-shadow: 1px 1px 1px 1px white;
+        }
+    }
+    .dropDown{
+        width: 200px;
+        border: 1px solid white;
+        background-color: #222b3c;
+        border-radius: 7px;
+        z-index: 1;
+        padding: 10px;
+        
+        p{
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media(max-width:1080px){
+    .sideNavBar{    
+        .container{
+            .name{
+                list-style: none;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    .sideNavBar{   
+        margin-right: -20px;
+
+        h3{
+            display: none;
+        }
+        .menubarbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+
+            .menuBarImg{
+                cursor: pointer;
+                margin-left: 10px;
+
+                img{
+                    width: 20px;
+                    margin-top: 23px;
+                    filter: invert(100%);
+                }
+            }
+        } 
+        .container{
+            display: none;
+        }
+    }
+}
+
+
+@media(max-width:600px){
+    .sideNavBar{   
+        margin-right: -20px;
+
+        h3{
+            display: none;
+        }
+        .menubarbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+
+            .menuBarImg{
+                cursor: pointer;
+                margin-left: 10px;
+
+                img{
+                    width: 20px;
+                    margin-top: 23px;
+                    filter: invert(100%);
+                }
+            }
+        } 
+        .container{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .sideNavBar{   
+        margin-right: -20px;
+
+        h3{
+            display: none;
+        }
+        .menubarbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+
+            .menuBarImg{
+                cursor: pointer;
+                margin-left: 10px;
+
+                img{
+                    width: 20px;
+                    margin-top: 23px;
+                    filter: invert(100%);
+                }
+            }
+        } 
+        .container{
+            display: none;
+        }
+    }
+}

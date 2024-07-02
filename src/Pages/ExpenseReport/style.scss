@@ -1,0 +1,160 @@
+.expense{
+    display: flex;
+    background-color: #222b3c;
+    
+    h2{
+        margin-left: 10px;
+    }
+
+    .expenseReport{
+        width: 100%;
+        position: relative;
+        margin-left: 15%;
+        padding-left: 30px;
+        // border-left: 1px solid #000;
+        background-color: #222b3c;
+        color: white;
+        padding-bottom: 20px;
+    
+        .filter{
+            display: flex;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        select{
+            width: 150px;
+            height: 32px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        input[type="text"]::placeholder {
+            color: black
+        }
+    
+        input[type="month"] {
+            &::placeholder {
+                color: grey;
+            }
+        }
+        
+        .summary{
+            width: fit-content;
+            border: 1px solid gray;
+            border-radius: 7px;
+            background-color: #222b3c;
+            padding-right: 25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+    
+            h3{
+                margin-left: 20px;
+            }
+    
+            .summaryBox{
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .expense{
+        .expenseReport{
+            margin-left: 200px;
+
+            .filter{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            input{
+                width: 150px;
+                height: 30px;
+            }
+        
+            select{
+                width: 150px;
+                height: 32px;
+            }
+            .summary{
+                width: 70%;
+                border: 1px solid gray;
+                border-radius: 7px;
+                background-color: #222b3c;
+                margin-bottom: 20px;
+                color: white;
+                font-size: 10px;
+        
+                h3{
+                    font-weight: 600;
+                    margin-left: 20px;
+                }
+        
+                .summaryBox{
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .expense{
+        .expenseReport{
+            margin-left: 5px;
+
+            h2{
+                margin-left: 25px;
+            }
+            .filter{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            input{
+                width: 150px;
+                margin-right: 0;
+                height: 30px;
+            }
+        
+            select{
+                width: 150px;
+                height: 32px;
+            }
+            .summary{
+                width: 70%;
+                border: 1px solid gray;
+                border-radius: 7px;
+                background-color: #222b3c;
+                margin-bottom: 20px;
+                color: white;
+                font-size: 10px;
+        
+                h3{
+                    font-weight: 600;
+                    margin-left: 20px;
+                }
+        
+                .summaryBox{
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.chart-container {
+  position: relative;
+  width: 80%;
+  background-color: #222b3c;
+  padding: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #949494;
+  border-radius: 7px;
+  
+  .dropDownbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+    margin-bottom: 20px;
+
+    .dropdown {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      height: 15px;
+      border: 1px solid white;
+      padding: 10px;
+      border-radius: 7px;
+      font-size: 12px;
+      color: white;
+      cursor: pointer;
+
+      .selectedItem {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+      }
+
+      .arrowUp {
+        width: 15px;
+        height: 15px;
+        transform: rotate(180deg);
+        cursor: pointer;
+        filter: invert(100%); 
+      }
+
+      .arrowDown {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        filter: invert(100%);
+      }
+    }
+
+    .dropdownContainer {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 140px;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 7px;
+      background-color: white;
+      z-index: 1000;
+
+      .items {
+        display: grid;
+        .cPname {
+          font-size: 14px;
+          color: black;
+        }
+
+        .checkbox {
+          display: none;
+        }
+
+        .checkbox + p::before {
+          content: '';
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #979797;
+          border-radius: 4px;
+          margin-right: 5px;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+
+        .checkbox:checked + p::before {
+          background-color: gray;
+          border-color: gray;
+          content: '✔';
+          color: white;
+          font-size: 10px;
+          text-align: center;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+
+  .canvasjs-chart-credit {
+    display: none !important;
+  }
+}
+
+@media(max-width:1080px){
+  .chart-container{
+    width: 70%;
+    .canvasjs-chart-canvas{
+      width: 900;
+    }
+  }
+}
+
+@media(max-width:800px){
+  .chart-container{
+    width: 50%;
+    .canvasjs-chart-canvas{
+      width: 700;
+    }
+  }
+}
+
+@media(max-width:500px){
+  .chart-container{
+    width: 65%;
+    .canvasjs-chart-canvas{
+      width: 750;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.checkIn{
+    display: flex;
+    background-color: #222b3c;
+    .checkInReport{
+        position: relative;
+        margin-left: 15%;
+        // border-left: 1px solid #000;
+        background-color: #222b3c;
+        padding-bottom: 20px;
+        color: white;
+        padding-left: 30px;
+    
+        .filter{
+            display: flex;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        select{
+            width: 150px;
+            height: 32px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        input[type="text"]::placeholder {
+            color: black
+        }
+    
+        input[type="month"] {
+            &::placeholder {
+                color: grey;
+            }
+        }
+    
+    
+        .checkInSummary {
+            width: 90%;
+            height: auto;
+            border: 1px solid gray;
+            border-radius: 7px;
+            background-color: #222b3c;
+            padding: 20px;
+            margin: 20px 0;
+    
+            h3 {
+                margin-bottom: 15px;
+            }
+    
+            .summaryBox {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .checkIn{
+        .checkInReport{
+            width: 450px;
+            margin-left: 25%;
+            background-color: #222b3c;
+            padding-bottom: 20px;
+            color: white;
+            // padding-left: 30px;
+
+            .checkInSummary{
+                font-size: 12px;
+                .summaryBox{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .checkIn{
+        h2{
+            margin-left: 20px;
+        }
+        .checkInReport{
+            width: 350px;
+            margin-left: 5%;
+            background-color: #222b3c;
+            padding-bottom: 20px;
+            color: white;
+            // padding-left: 30px;
+
+            .checkInSummary{
+                font-size: 12px;
+                .summaryBox{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

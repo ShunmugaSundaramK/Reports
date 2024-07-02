@@ -1,0 +1,145 @@
+.payment{
+    display: flex;
+    background-color: #222b3c;
+    
+    .paymentReport{
+        position: relative;
+        margin-left: 15%;
+        padding-left: 50px;
+        // border-left: 1px solid rgb(159, 157, 157);
+        background-color: #222b3c;
+        color: white;
+        padding-bottom: 20px;
+        width: 100%;
+
+        h2{
+            margin-left: 10px;
+        }
+    
+        .filter{
+            display: flex;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+        select{
+            width: 150px;
+            height: 32px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+        input[type="text"]::placeholder {
+            color: black
+        }
+    
+        input[type="month"] {
+            &::placeholder {
+                color: grey;
+            }
+        }
+    
+    }
+}
+
+@media(max-width:1080px){
+    .filter{
+        display: flex;
+    }
+    input{
+        width: 130px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .payment{
+        .paymentReport {
+            margin-left: 200px;
+            h2{
+                margin-left: 30px;
+            }
+            input, select {
+                width: 200px;
+                margin-left: 30px;
+                margin-right: 0;
+            }
+            .filter {
+                flex-direction: column;
+                //   align-items: flex-start;
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width: 800px) {
+    .paymentReport{ 
+        h2{
+            margin-left: 100%;
+        }
+
+        .filter {
+            margin-left: 10%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+  
+    .paymentReport { 
+        input, select {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .payment{
+        border-left: 0px;
+        .paymentReport{
+            margin-left: 20px;
+            h2{
+                margin-left: 10px; 
+             }
+             .filter{
+                 margin-left: -60px;
+                 input, select {
+                     width: 100%;
+                 }
+             }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .payment{
+        .paymentReport{
+            margin-left: 10px;
+
+            .filter{
+                margin-left: -20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                input, select {
+                    width: 150px;
+                    margin: 10px 0 10px 0;
+                    margin-right: 5px;
+                }
+
+
+            }
+        }
+    }
+}   
+

@@ -1,0 +1,216 @@
+.piReport{
+    display: flex;
+    background-color: #222b3c;
+    
+    .processedInventory{
+        // border-left: 1px solid #000;
+        position: relative;
+        margin-left: 15%;
+        padding-left: 30px;
+        background-color: #222b3c;
+        color: white;
+        padding-bottom: 20px;
+        width: 100%;
+    
+        input{
+            width: 150px;
+            height: 30px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        select{
+            width: 150px;
+            height: 32px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+    
+        .filter{            
+            display: flex;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+        
+        select{
+            width: 150px;
+            height: 32px;
+            border-width: 1px;
+            margin: 10px 0 10px 0;
+            margin-right: 20px;
+            border-radius: 4px;
+            font-family: Poppins;
+        }
+        
+        input[type="text"]::placeholder {
+            color: black
+        }
+        
+        input[type="month"] {
+            &::placeholder {
+                color: grey;
+            }
+        }
+    
+        .insights{
+            background-color: #222b3c;
+            padding: 20px;
+            border-radius: 7px;
+            width: 86%;
+            border: 1px solid #949494;
+            h3{
+                margin-left: 20px;
+            }
+            .insightsContainer{
+                display: flex;
+    
+                .leftBox{
+                    background-color: #222b3c;
+                    display: grid;
+                    align-items: center;
+                    padding: 20px;
+                    border-radius: 7px;
+                    background-color: #222b3c;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    border: 1px solid #949494;
+                }
+    
+                .rightBox{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 30px;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 7px;
+                    background-color: #949494;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    background-color: #222b3c;
+                    border: 1px solid #949494;
+                }
+    
+                .cHeader{
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .consumed{
+            background-color: #222b3c;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 7px;
+            width: 86%;
+            border: 1px solid #949494;
+            margin-bottom: 20px;
+            h3{
+                margin-left: 20px;
+            }
+            .consumedBox{
+                display: flex;
+                .consumedContainer{
+                    display: flex;
+        
+                    .leftBox{
+                        background-color: #222b3c;
+                        display: grid;
+                        align-items: center;
+                        padding: 20px;
+                        border-radius: 7px;
+                        background-color: #222b3c;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                        font-size: 12px;
+                        border: 1px solid #949494;
+                    }
+        
+                    .rightBox{
+                        display: flex;
+                        gap: 30px;
+                        text-align: center;
+                        padding: 20px;
+                        border-radius: 7px;
+                        background-color: #222b3c;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                        font-size: 12px;
+                        border: 1px solid #949494;
+                    }
+        
+                    .cHeader{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media(max-width:900px){
+    .piReport{
+        .processedInventory{
+            margin-left: 200px;
+
+            .insights{
+                background-color: #222b3c;
+                padding: 10px;
+                border-radius: 7px;
+                width: 80%;
+                border: 1px solid #949494;
+                h3{
+                    margin-left: 20px;
+                }
+                .insightsContainer{
+                    display: flex;
+        
+                    .leftBox{
+                        background-color: #222b3c;
+                        display: grid;
+                        align-items: center;
+                        padding: 20px;
+                        border-radius: 7px;
+                        background-color: #222b3c;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                        border: 1px solid #949494;
+                    }
+        
+                    .rightBox{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 30px;
+                        text-align: center;
+                        padding: 20px;
+                        border-radius: 7px;
+                        background-color: #949494;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                        background-color: #222b3c;
+                        border: 1px solid #949494;
+                    }
+        
+                    .cHeader{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,122 @@
+.pagination {
+    position: relative; 
+    width: 90%;
+    height: 550px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    // margin-left: 20px;
+    background-color: #222b3c;
+  
+    .table {
+      // width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 50px;
+  
+      .tableHeader, .tableRow {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .tableHeader {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+  
+      .header, .tableCell {
+        flex: 1;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      .header {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .paginationCursor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; 
+  }
+  
+  .pagenationContainer {
+    display: flex;
+    gap: 10px;
+    border: none;
+  
+    li {
+      list-style: none;
+
+      img{
+        cursor: pointer;
+        filter: invert(100%); 
+      }
+
+      .leftArrow{
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @media (max-width:600px){
+    .pagination{
+      width: fit-content;
+      margin-left: -60px;
+
+      table {
+        display: flex;
+        flex-wrap: wrap;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+  
+        .tableHeader, .tableRow {
+          font-size: 10px;
+        }
+    
+        .header, .tableCell {
+          flex: 1;
+          padding: 8px;
+          text-align: left;
+          font-size: 10px;
+        }
+    
+        .header {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @media (max-width:500px){
+    .pagination{
+      width: 380px;
+      overflow: auto;
+      // margin-left: -15px;
+      table {
+        display: flex;
+        flex-wrap: wrap;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+  
+        .tableHeader, .tableRow {
+          font-size: 10px;
+        }
+    
+        .header, .tableCell {
+          flex: 1;
+          padding: 3px;
+          text-align: left;
+          font-size: 10px;
+        }
+    
+        .header {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

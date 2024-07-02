@@ -1,0 +1,83 @@
+.pieChart{
+    width: 90%;
+    background-color: #222b3c;
+    margin-bottom: 30px;
+    color: white;
+    border: 1px solid #D9D9D9;
+
+    h3{
+        color: white;
+        padding: 20px;
+    }
+    .canvasjs-chart-credit {
+        display: none !important;
+    }
+}
+
+@media(max-width:800px){
+    .pieChart{
+        width: 600px;
+        margin-left: 10px;
+        padding-left: 50px;
+        border: 1px solid white;
+        h2{
+            padding: 0;
+            margin-left: -50px;
+        }
+        .canvasjs-chart-canvas {
+            width: 90px;
+            margin-left: -10px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .pieChart{
+        width: 88%;
+        margin-left: 10px;
+        // padding-left: 50px;
+        border: 1px solid white;
+        h2{
+            padding: 0;
+            margin-left: -50px;
+        }
+        .canvasjs-chart-canvas {
+            width: 90px;
+            margin-left: -10px;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .pieChart{
+        width: 100%;
+        margin-left: -55px;
+        padding-left: 50px;
+        border: 1px solid white;
+        h2{
+            padding: 0;
+            margin-left: -50px;
+        }
+        .canvasjs-chart-canvas {
+            width: 100px;
+            margin-left: -50px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .pieChart{
+        width: 92%;
+        margin-left: -55px;
+        padding-left: 50px;
+        border: 1px solid white;
+        h2{
+            padding: 0;
+            margin-left: -50px;
+        }
+        .canvasjs-chart-canvas {
+            width: 100px;
+            margin-left: -50px;
+        }
+    }
+}

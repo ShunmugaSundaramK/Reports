@@ -1,0 +1,67 @@
+.barChart{
+    width: 90%;
+    margin-top: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 7px;
+    padding: 10px;
+
+    .canvasjs-chart-credit {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    .barChart{
+        width: 730px;
+        .canvasjs-chart-canvas {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .barChart{
+        width: 580px;
+        .canvasjs-chart-canvas {
+            width: 100px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .barChart{
+        width: 500px;
+        .canvasjs-chart-canvas {
+            width: 100px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .barChart{
+        width: 430px;
+        .canvasjs-chart-canvas {
+            width: 130px;
+            // margin-left: -60px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .barChart{
+        width: 400px;
+        .canvasjs-chart-canvas {
+            width: 100px;
+            // margin-left: -60px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .barChart{
+        width: 320px;
+        .canvasjs-chart-canvas {
+            width: 100px;
+        }
+    }
+}

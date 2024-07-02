@@ -1,0 +1,31 @@
+.filter{
+    display: flex;
+    
+    input{
+        width: 150px;
+        height: 30px;
+        border-width: 1px;
+        margin: 10px 0 10px 0;
+        margin-right: 20px;
+        border-radius: 4px;
+        font-family: Poppins;
+    }
+    select{
+        width: 150px;
+        height: 32px;
+        border-width: 1px;
+        margin: 10px 0 10px 0;
+        margin-right: 20px;
+        border-radius: 4px;
+        font-family: Poppins;
+    }
+    input[type="text"]::placeholder {
+        color: black
+    }
+    
+    input[type="month"] {
+        &::placeholder {
+            color: grey;
+        }
+    }
+}

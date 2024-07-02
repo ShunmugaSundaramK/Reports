@@ -1,0 +1,16 @@
+.radialPieChart {
+    width: 87%;
+    background-color: #222b3c;
+    padding: 20px;
+    color: white; 
+    // margin-left: 20px;
+    margin: 20px 0 20px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 7px;
+
+    .recharts-legend-item-text,
+    .recharts-label-text {
+        fill: black; 
+    }
+}
+  
